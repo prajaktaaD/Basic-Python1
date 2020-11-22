@@ -1,0 +1,43 @@
+##types of function 
+
+    def fun(roll,name,per):            //defination of function
+    print("name:",name)
+    print("roll:",roll)
+    print("percentage:",per)
+    
+ 
+#positional argument 
+--------------------
+fun(22,"pradnya",70)
+fun(32,"prajakta",82)
+
+#keyword argument
+------------------
+fun(name="abc",roll=34,per=45)
+
+   def fun(roll,name,per,class1="c"):
+    print("name:",name)
+    print("roll:",roll)
+    print("percentage:",per)
+    print("class=",class1)
+    print()
+    
+#default argument 
+---------------------
+fun(22,"pradnya",70,"d")
+
+#variable length positional argument
+-----------------------------------
+   def var_args(*args):
+    print(args)
+   
+var_args("samsung","AS0",15000)# evaluated in form of tuples
+
+#variable length keyword argument
+'''def var_arg(**args):
+    global id
+    id=12 #introducing a variable within function as global
+    print(args)
+    
+var_arg(Brand="samsung",Model="AS0",Amount=15000)# evaluated in the form of dictionaries
+print(id)'''
